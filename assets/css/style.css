@@ -247,3 +247,44 @@ a.icon-top i {
     font-size: 30px;
     font-weight: bolder;
 }
+
+
+
+@media (max-width: 1024px) {
+    .hero .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        padding: 16px 100px;
+    }
+    .hero .hero-content img {
+        margin-top: 16px;
+        width: 100%;
+    }
+    
+    .featured-produtcs .container.row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .featured-produtcs .card {
+        width: calc(90% - 10px);
+    }
+
+    .service {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .service p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    footer .container .row {
+        flex-direction: column;
+        
+        align-items: center;
+    }
+}
