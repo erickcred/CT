@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600&family=Open+Sans:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --green: #097D47;
+    --green-light: #0EC972;
+    --green-one: #0A8A4E;
+    --baby-blue-light: #6BD8E3;
+    --baby-blue: #1EA2B0;
+    --brown-light: #8A2C31;
+    --prink-dark: #B01E6F;
+}
+
+* {
+    box-sizing: border-box;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.btn {
+    padding: 5px 20px;
+    border-radius: 24px;
+}
+
+.btn-primary {
+    background-color: var(--green);
+    color: #e9e9e9
+}
+.btn-primary:hover {
+    background-color: var(--green-one);
+    color: #e9e9e9
+}
+a.btn {
+    margin-top: 16px;
+    display: inline-block;
+}
+.text-center {
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: var(--green);
+    color: #e9e9e9;
+    padding: 20px 0;
+}
+.nav-bar ul li {
+    display: inline;
+}
+.nav-bar ul li a {
+    color: #e9e9e9;
+    font-size: 18px;
+    margin-left: 16px;
+}
+.nav-bar ul li a:hover,
+footer .nav ul li a:hover,
+footer .attendance ul li a:hover {
+    color: var(--baby-blue-light);
+}
+
+section {
+    padding: 40px 0;
+}
+.hero {
+    background-color: #097d4748;
+    padding: 0;
+}
+.hero .hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 0 100px;
+}
+.hero .hero-content div h2 {
+    color: var(--brown-light);
+    font-size: 32px;
+    font-weight: bolder;
+    margin-bottom: 16px;
+}
+.hero .hero-content div p {
+    color: var(--brown-light);
+    font-weight: 400;
+}
+
+.featured-produtcs .row {
+    align-items: flex-start;
+    overflow-x: none;
+}
+.card {
+    border: solid transparent;
+    border-radius: 24px;
+    width: calc(90% / 3 - 20px);
+    box-shadow: -1px 0px 10px -3px #0ec9728f;
+}
+.card-header img {
+    border-radius: 24px;
+    width: 100%;
+}
+.card-body {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.card-body div.direction-links {
+    text-align: end;
+}
+.card-title {
+    color: var(--green);
+    font-weight: bolder;
+    padding: 10px 0;
+}
+.card-text {
+    text-align: justify;
+}
+.card:hover {
+    box-shadow: -1px 0px 10px -2px #0ec972;
+    transform: scale(1.01);
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border: solid #0ec97236;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-left: none;
+    margin-bottom: 50px;
+}
+.service.left {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-right: none;
+}
+.service img.right {
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+.service img.left {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+
+.contacts {
+    background-color: #097d471f;
+}
+.contacts form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacts form input,
+.contacts form textarea,
+.contacts form button {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;    
+}
+.contacts form input,
+.contacts form textarea {
+    border-radius: 10px;
+    width: 50%;
+    outline-color: var(--green);
+}
+.contacts form textarea {
+    resize: none;
+    height: 180px;
+}
+.contacts .buttons button {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contacts form label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border-width: 0;
+    white-space: nowrap;
+}
+
+
+footer .row {
+    align-items: flex-start;
+    padding: 16px 0 70px 0;
+}
+footer .nav li,
+footer .attendance li {
+    margin-bottom: 10px;
+}
+footer .nav ul li a,
+footer .attendance ul li a {
+    color: #e9e9e9;
+    font-size: 18px;
+}
+footer h3 {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 16px 0;
+}
+footer .social-links ul li {
+    display: inline-block;
+    margin-right: 16px;
+}
+footer .social-links a img {
+    height: 25px;
+}
+
+a.icon-top {
+    background-color: var(--prink-dark);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a.icon-top.disabled {
+    display: none;
+}
+
+a.icon-top i {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+}
